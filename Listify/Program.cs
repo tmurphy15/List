@@ -18,7 +18,7 @@ namespace Listify
 
             app.UseAuthorization();
 
-            app.MapGet("/", () => Results.Ok("Hello, world"));
+            app.MapGet("/", () => Results.Ok("Hello, world!"));
 
             app.MapGet("/listify", (int begin, int end, int index) =>
             {
